@@ -1,6 +1,11 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json test
 
 name: sample-app-aoai-chatgpt
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 metadata:
   template: sample-app-aoai-chatgpt@0.0.1-beta
 services:
